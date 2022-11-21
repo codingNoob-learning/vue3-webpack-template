@@ -1,6 +1,6 @@
 <template>
-  <h1>{{ message }}</h1>
-  <HelloWorld />
+    <h1>{{ message }}</h1>
+    <HelloWorld />
 </template>
 
 <script>
