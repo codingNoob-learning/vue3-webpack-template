@@ -24,13 +24,18 @@ module.exports = {
 
         "vue/html-self-closing": ["error", {
             "html": {
-              "void": "always",          // never = <img>, always = <img />
-              "normal": "never",        // never = <div></div>, always = <div></div> 안에 내용이 없다면 <div />로 끝내야 함
-              "component": "always"     // never = <component></component>, always = <component />
+                "void": "always",          // never = <img>, always = <img />
+                "normal": "never",        // never = <div></div>, always = <div></div> 안에 내용이 없다면 <div />로 끝내야 함
+                "component": "always"     // never = <component></component>, always = <component />
             },
             "svg": "always",
             "math": "always"
         }],
+
+        // html 요소와 혼동이 일어날 수 있으므로
+        // vue에서는 component의 이름을 두 개 이상의 단어를 조합하여 만드는 것을 강요하는데
+        // 이 기능을 꺼버림.
+        "vue/multi-word-component-names": 0,
 
         "vue/html-indent": ["error", 4, {
             "attribute": 1,
@@ -38,6 +43,6 @@ module.exports = {
             "closeBracket": 0,
             "alignAttributesVertically": true,
             "ignores": []
-          }]
+        }]
     }
 }
