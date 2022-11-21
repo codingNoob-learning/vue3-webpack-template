@@ -32,6 +32,8 @@ module.exports = {
             "math": "always"
         }],
 
+        "vue/multi-word-component-names": 0,
+
         "vue/html-indent": ["error", 4, {
             "attribute": 1,
             "baseIndent": 1,
