@@ -39,7 +39,7 @@ module.exports = {
                 // loader 순서 중요함.
                 use: [
                     'vue-style-loader',
-                    'style-loader',
+                    // 'style-loader', -> vue-style-loader 와 같이 쓰면 충돌로 에러남
                     // css-loader로 해석한 부분을 style-loader가 html에 style 태그로 붙여넣어줌.
                     'css-loader',
                     // 현재 main.js에서 css 파일을 import시켰는데 js에서는 css를 해석할 수 없으므로 css-loader 패키지를 사용.
